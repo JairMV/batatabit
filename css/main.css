@@ -1,0 +1,512 @@
+/* 
+    Es bueno acomodar los estilos con relación a ciertos temas, por ejemplo:
+    1.- Posicionamiento
+    2.- Box Model
+    3.- Tipografía
+    4.- Visuales
+    5.- Otros
+*/
+
+:root {
+    --principalColor:                  #F7931A;
+    --principalHeadingsColor:          #FFFFFF;
+    --secondaryHeadingsColor:          #201E1C;
+    --sectionsBackgroundColor:         #E5E5E5;
+    --sectionsContrastColor:           #FFFFFF;
+    --thirdSectionBackgroundColor:     #201E1C;
+    --thirdSectionBackgroundCardColor: #282623;
+    --descriptionsPrincipalColor:      #808080;
+    --descriptionsSecondaryColor:      #757575;
+    --secondaryFont:         'Inter', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+.header {
+    position: relative;
+
+    padding-top: 12px;
+    padding-bottom: 30px;
+
+    text-align: center;
+
+    background-image: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+
+.header__texts-container {
+    width: 288px;
+    margin: 0 auto;
+}
+
+.header__main-heading {
+    font-size: 2.4rem;
+    line-height: 26px;
+    font-weight: 700;
+
+    color: var(--principalHeadingsColor);
+}
+
+.header__description {
+    margin: 20px;
+
+    font-size: 1.4rem;
+    line-height: 18px;
+    font-weight: 500;
+
+    color: #FFE9D4;
+}
+
+.header__cta {
+    position: absolute;
+    top:  calc(100% - 30px);
+    left: calc(50% - 115px);
+
+    display: inline-block;
+    width: 230px;
+    height: 48px;
+    border-radius: 5px;
+
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 48px;
+    text-decoration: none;
+
+    background-color: #FAF8F7;
+    color: #201E1C;
+    box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.452);
+}
+
+.dwn-arrow {
+    vertical-align: middle;
+
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    margin-left: 8px;
+
+    line-height: 0;
+
+    background-image: url('../assets/icons/down-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Currency Section Styles */
+.currency-section {
+    padding-top: 60px;
+    padding-bottom: 35px;
+
+    text-align: center;
+
+    background-color: var(--sectionsBackgroundColor);
+}
+
+.currency-section__texts-container {
+    width: 288px;
+    margin: 0 auto;
+}
+
+.currency-section__img {
+    width:  195px;
+    height: 195px;
+    margin: 0 auto;
+    
+    background-image: url('../assets/img/Bitcoin.svg');
+    background-repeat: no-repeat;
+}
+
+.currency-section__main-title {
+    font-size: 2.4rem;
+    line-height: 26px;
+    font-weight: 700;
+
+    color: var(--secondaryHeadingsColor);
+}
+
+.currency-section__main-description {
+    font-size: 1.4rem;
+    line-height: 18px;
+    font-weight: 500;
+
+    color: var(--descriptionsSecondaryColor);
+}
+
+.table {
+    width: 202px;
+    height: 160px;
+    margin-top: 50px;
+    border-radius: 5px;
+
+    font-family: 'Inter', sans-serif;
+
+    background-color: white;
+
+    table-layout: fixed;
+}
+
+.table-caption {
+    margin-bottom: 16px;
+
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.8rem;
+    line-height: 24px;
+    font-weight: 700;
+    text-align: left;
+
+    color: var(--principalColor);
+}
+
+.table-caption--color {
+    color: #1A9AF7;
+}
+
+.trending-icon {
+    position: absolute;
+    right: 6px;
+
+    display: inline-block;
+    width:  17px;
+    height: 17px;
+
+    background-image: url('../assets/icons/trending-down.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.trending-icon--up {
+    background-image: url('../assets/icons/trending-up.svg');
+}
+
+.table__th {
+    text-align: left;
+    font-size: 1.6rem;
+    line-height: 20px;
+    font-weight: 500;
+
+    color: #B5B0AC;
+}
+
+.table__td {
+    position: relative;
+
+    font-size: 1.4rem;
+    line-height: 16px;
+    font-weight: 400;
+
+    color: #757575;
+}
+
+.table-centered-container {
+    margin-left:  auto;
+    margin-right: auto;
+}
+
+.status-card {
+    width: 202px;
+    height: 32px;
+    padding: 0 5px;
+
+    font-size: 1.4rem;
+    line-height: 32px;
+    font-weight: 400;
+
+    color: #282623;
+    border-radius: 5px;
+}
+
+.status-card__bold-container {
+    font-weight: 700;
+}
+
+.currency-table__status-card {
+    margin-left:  auto;
+    margin-right: auto;
+    background-color: #FFE9D4;
+}
+
+.comissions-table__status-card {
+    margin-left:  auto;
+    margin-right: auto;
+    background-color: #E7F5FF;
+}
+
+/* Benefits Section Styles */
+.benefits-section {
+    position: relative;
+
+    padding: 20px 0;
+
+    background-color: var(--thirdSectionBackgroundColor);
+}
+
+.benefits-section__logo {
+    position: absolute;
+    top: -12px;
+    left: calc(50% - 21px);
+
+    width: 42px;
+    height: 25px;
+
+    background-image: url('../assets/icons/batata.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.benefits-section__texts-container {
+    width: 288px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.benefits-section__main-title {
+    font-size: 2.4rem;
+    line-height: 26px;
+    font-weight: 700;
+
+    color: white;
+}
+
+.benefits-section__main-description {
+    font-size: 1.4rem;
+    line-height: 18px;
+    font-weight: 500;
+
+    color: var(--descriptionsPrincipalColor);
+}
+
+.benefits-section__card {
+    margin: 18px auto;
+}
+
+.card {
+    width: 288px;
+    padding: 12px 15px;
+
+    border-radius: 5px;
+    background-color: var(--thirdSectionBackgroundCardColor);
+}
+
+.icon {
+    width:  24px;
+    height: 24px;
+
+    background-image: url('../assets/icons/clock.svg');
+}
+
+.icon--eye {
+    background-image: url('../assets/icons/eye.svg');
+}
+
+.icon--dollar {
+    background-image: url('../assets/icons/dollar-sign.svg');
+}
+
+.icon--check {
+    background-image: url('../assets/icons/check-circle.svg');
+}
+
+.card__title {
+    margin: 12px 0;
+
+    font-size: 1.8rem;
+    line-height: 18px;
+    font-weight: 700;
+
+    color: white;
+}
+
+.card__description {
+    font-size: 1.4rem;
+    line-height: 18px;
+    font-weight: 500;
+
+    color: var(--descriptionsPrincipalColor);
+}
+
+.comodin-section {
+    height: 387px;
+    padding-top: 0.1px;
+
+    background-image: url('../assets/img/bitcoinbaby.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.comodin-section__main-title {
+    margin-top: 60px;
+    
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-align: center;
+
+    color: white;
+}
+
+/* Plans Section Styles */
+.plans-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    background-color: var(--sectionsBackgroundColor);
+}
+
+.plans-section__texts-container {
+    width: 288px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.plans-section__main-title {
+    font-size: 2.4rem;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.plans-section__description {
+    font-size: 1.4rem;
+    line-height: 18px;
+    font-weight: 500;
+
+    color: var(--descriptionsSecondaryColor);
+}
+
+.plans-section__plan-card {
+    margin: 50px auto;
+}
+
+.plan-card {
+    position: relative;
+
+    width: 190px;
+    padding-top: 20px;
+    padding-bottom: 22px;
+
+    text-align: center;
+
+    background-color: var(--sectionsContrastColor);
+    border-radius: 8px;
+    box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.39);
+}
+
+.plan-card__suggestion-text {
+    position: absolute;
+    top: -15px;
+    left: calc(50% - 51px);
+
+    width: 102px;
+    height: 32px;
+    margin: 0 auto;
+
+    font-size: 1.2rem;
+    line-height: 32px;
+
+    background-color: var(--principalColor);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.575);
+}
+
+.plan-card__title {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.plan-card__price {
+    margin: 10px 0;
+
+    font-size: 5.2rem;
+    font-weight: 700;
+}
+
+.plan-card__dollar-sign {
+    display: inline-block;
+    margin-top: 10px;
+
+    vertical-align: top;
+
+    font-size: 1.2rem;
+}
+
+.plan-card__reminder {
+    width: 158px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #757575;
+}
+
+.plan-card__cta {
+    display: inline-block;
+    width: 152px;
+    height: 48px;
+    margin-top: 10px;
+    border: 1px var(--principalColor) solid;
+
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 48px;
+    text-decoration: none;
+
+    background-color: #FAF8F7;
+    border-radius: 5px;
+    color: #201E1C;
+}
+
+.plan-card__arrow-icon {
+    vertical-align: middle;
+
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+
+    background-image: url('../assets/icons/orange-right-arrow.svg');
+    background-position: center;
+    background-size: cover;
+}
+
+.footer {
+    padding: 20px 0;
+
+    background-color: var(--principalColor);
+}
+
+.footer__flex-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer__ul {
+    padding: 0;
+
+    list-style: none;
+}
+
+.footer__link {
+    font-size: 1.4rem;
+    line-height: 20px;
+    
+    text-decoration: none;
+    color: white;
+}
+
+.footer__logo {
+    display: inline-block;
+}

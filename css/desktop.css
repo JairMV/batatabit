@@ -1,0 +1,56 @@
+.header {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header__texts-container {
+    width: 80%;
+}
+
+.header__main-heading {
+    font-size: 5rem;
+    line-height: 60px;
+}
+
+.header__description {
+    font-size: 1.6rem;
+}
+
+.currency-section__texts-container {
+    width: 80%;
+}
+
+.currency-section__main-title {
+    font-size: 2.8rem;
+}
+
+.currency-section__main-description {
+    font-size: 1.6rem;
+}
+
+.table {
+    width: 300px;
+    height: 320px;
+}
+
+.benefits-section__texts-container {
+    width: 80%;
+}
+
+.benefits-section__main-title {
+    font-size: 2.8rem;
+}
+
+.benefits-section__main-description {
+    font-size: 1.6rem;
+}
+
+.footer__flex-container {
+    justify-content: space-around;
+}
+
+.footer__link {
+    font-size: 1.8rem;
+}

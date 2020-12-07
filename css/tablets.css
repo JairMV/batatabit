@@ -1,0 +1,30 @@
+.currency-section__tables-flex-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.table-caption {
+    text-align: center;
+}
+
+.benefits-section__flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.benefits-section__card {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.comodin-section {
+    background-image: url('../assets/img/bitcoinbaby2x.jpg');
+}
+
+.plans-section__flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
